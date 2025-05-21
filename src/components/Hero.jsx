@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -9,21 +8,28 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="container">
-        <motion.h1
-          className="hero-title"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          Bolos de Mainha
-        </motion.h1>
+        <div className="logo-container">
+          <motion.div
+            className="logo-wrapper"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <img 
+              src="/images/cakes/logo.png"
+              alt="Logo Confeitaria"
+              className="logo-image"
+            />
+          </motion.div>
+        </div>
+        
         <motion.p
           className="hero-subtitle"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-          O sabor caseiro que abraça a alma, feito com amor e os melhores ingredientes.
+          O sabor caseiro que esquenta o coração, feito com os melhores ingredientes e muito amor!
         </motion.p>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -32,7 +38,7 @@ const Hero = () => {
         >
           <Link to="/bolos">
             <Button variant="primary" size="lg" className="button-primary">
-              Veja Nossos Bolos <ArrowRight style={{ marginLeft: '8px', width: '20px', height: '20px' }} />
+              Veja Nossos Bolos <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>
         </motion.div>

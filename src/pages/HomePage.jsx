@@ -24,24 +24,7 @@ const HomePage = () => {
       >
         <FeaturedCakes />
       </motion.section>
-      <motion.section
-        className="section cake-pattern-bg"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <AboutSection />
-      </motion.section>
-      <motion.section
-        className="section"
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <Testimonials />
-      </motion.section>
+      
     </div>
   );
 };
