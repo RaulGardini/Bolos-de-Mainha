@@ -1,4 +1,3 @@
-
 /* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
 
@@ -32,7 +31,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0; /* Removido @apply border-border */
+  border: 0;
+  /* Removido @apply border-border */
 }
 
 body {
@@ -44,19 +44,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   color: var(--mainha-dark);
-  margin-bottom: 0.75rem; /* 12px */
+  margin-bottom: 0.75rem;
+  /* 12px */
 }
 
-h1 { font-size: 2.25rem; /* 36px */ }
-h2 { font-size: 1.875rem; /* 30px */ }
-h3 { font-size: 1.5rem; /* 24px */ }
-h4 { font-size: 1.25rem; /* 20px */ }
+h1 {
+  font-size: 2.25rem;
+  /* 36px */
+}
+
+h2 {
+  font-size: 1.875rem;
+  /* 30px */
+}
+
+h3 {
+  font-size: 1.5rem;
+  /* 24px */
+}
+
+h4 {
+  font-size: 1.25rem;
+  /* 20px */
+}
 
 p {
-  margin-bottom: 1rem; /* 16px */
+  margin-bottom: 1rem;
+  /* 16px */
 }
 
 a {
@@ -98,13 +120,16 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: var(--radius);
-  font-size: 1rem; /* 16px */
+  font-size: 1rem;
+  /* 16px */
   font-weight: 500;
-  padding: 0.75rem 1.5rem; /* 12px 24px */
+  padding: 0.75rem 1.5rem;
+  /* 12px 24px */
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid transparent;
-  text-decoration: none; /* Para links estilizados como botões */
+  text-decoration: none;
+  /* Para links estilizados como botões */
 }
 
 .button-primary {
@@ -162,48 +187,148 @@ img {
 
 .card-image {
   width: 100%;
-  height: 200px; /* Ajuste conforme necessário */
+  height: 200px;
+  /* Ajuste conforme necessário */
   object-fit: cover;
 }
 
 .card-content {
-  padding: 1.5rem; /* 24px */
+  padding: 1.5rem;
+  /* 24px */
 }
 
 .card-title {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
+  /* 20px */
   color: var(--mainha-dark);
-  margin-bottom: 0.5rem; /* 8px */
+  margin-bottom: 0.5rem;
+  /* 8px */
 }
 
 .card-description {
-  font-size: 0.875rem; /* 14px */
+  font-size: 0.875rem;
+  /* 14px */
   color: var(--gray-600);
-  margin-bottom: 1rem; /* 16px */
+  margin-bottom: 1rem;
+  /* 16px */
 }
 
 .card-price {
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.125rem;
+  /* 18px */
   font-weight: bold;
   color: var(--mainha-dark);
 }
 
+.cake-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Altura fixa para todas as imagens de bolo */
+  overflow: hidden;
+  border-radius: 8px 8px 0 0; /* Combina com o border radius do card no topo */
+  display: flex;
+  justify-content: center; /* Centraliza a imagem horizontalmente se width < 100% */
+}
+
+.cake-image {
+  width: 40%; /* Volte para 100% para cobrir todo o container */
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+  object-position: center; /* Centraliza a imagem */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  padding: 0;
+}
+
+.card-content {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para a tabela de tamanhos e preços */
+.cake-sizes-table {
+  margin-top: 1rem;
+  overflow-x: auto; /* Para garantir que a tabela seja responsiva em telas pequenas */
+}
+
+.sizes-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.sizes-table th,
+.sizes-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.sizes-table th {
+  font-weight: 600;
+  color: #6e343d; /* Cor da marca "Bolos de Mainha" */
+  background-color: #f9f4f5; /* Cor de fundo suave que combina com a marca */
+}
+
+.sizes-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Destaque visual quando passar o mouse sobre uma linha da tabela */
+.sizes-table tbody tr:hover {
+  background-color: #f9f4f5;
+}
+
+
 /* Estilos de Formulário */
 .form-group {
-  margin-bottom: 1.5rem; /* 24px */
+  margin-bottom: 1.5rem;
+  /* 24px */
 }
 
 .form-label {
   display: block;
   font-weight: 500;
-  margin-bottom: 0.5rem; /* 8px */
+  margin-bottom: 0.5rem;
+  /* 8px */
   color: var(--mainha-dark);
 }
 
 .form-input,
 .form-textarea {
   width: 100%;
-  padding: 0.75rem; /* 12px */
+  padding: 0.75rem;
+  /* 12px */
   border: 1px solid var(--mainha-light);
   border-radius: var(--radius);
   background-color: var(--white);
@@ -216,7 +341,8 @@ img {
 .form-textarea:focus {
   outline: none;
   border-color: var(--mainha-medium);
-  box-shadow: 0 0 0 2px rgba(190, 139, 138, 0.3); /* Foco com cor mainha-medium */
+  box-shadow: 0 0 0 2px rgba(190, 139, 138, 0.3);
+  /* Foco com cor mainha-medium */
 }
 
 .form-textarea {
@@ -226,29 +352,38 @@ img {
 
 /* Estilos de Seção */
 .section {
-  padding-top: 4rem; /* 64px */
-  padding-bottom: 4rem; /* 64px */
+  padding-top: 4rem;
+  /* 64px */
+  padding-bottom: 4rem;
+  /* 64px */
 }
 
 .section-title {
-  font-size: 2rem; /* 32px */
-  md-font-size: 2.5rem; /* 40px - para ser usado com media query */
+  font-size: 2rem;
+  /* 32px */
+  md-font-size: 2.5rem;
+  /* 40px - para ser usado com media query */
   color: var(--mainha-dark);
   text-align: center;
-  margin-bottom: 3rem; /* 48px */
+  margin-bottom: 3rem;
+  /* 48px */
   position: relative;
 }
 
 .section-title::after {
   content: "";
   position: absolute;
-  bottom: -0.75rem; /* -12px */
+  bottom: -0.75rem;
+  /* -12px */
   left: 50%;
   transform: translateX(-50%);
-  width: 6rem; /* 96px */
-  height: 0.25rem; /* 4px */
+  width: 6rem;
+  /* 96px */
+  height: 0.25rem;
+  /* 4px */
   background-color: var(--mainha-medium);
-  border-radius: 0.125rem; /* 2px */
+  border-radius: 0.125rem;
+  /* 2px */
 }
 
 /* Padrão de fundo */
@@ -267,8 +402,15 @@ img {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .pulse-gentle-animation {
@@ -276,8 +418,15 @@ img {
 }
 
 @keyframes pulse-gentle {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
 }
 
 /* Navbar */
@@ -297,7 +446,8 @@ img {
 }
 
 .navbar-brand {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;
+  /* 28px */
   color: var(--mainha-dark);
   font-family: 'Great Vibes', cursive;
 }
@@ -308,7 +458,8 @@ img {
 }
 
 .navbar-item {
-  margin-left: 1.5rem; /* 24px */
+  margin-left: 1.5rem;
+  /* 24px */
 }
 
 .navbar-link {
@@ -323,7 +474,8 @@ img {
 }
 
 .navbar-toggle {
-  display: none; /* Escondido por padrão, visível em mobile */
+  display: none;
+  /* Escondido por padrão, visível em mobile */
   background: none;
   border: none;
   cursor: pointer;
@@ -339,13 +491,16 @@ img {
 .footer {
   background-color: var(--mainha-dark);
   color: var(--white);
-  padding: 3rem 0; /* 48px */
+  padding: 3rem 0;
+  /* 48px */
   text-align: center;
 }
 
 .footer-content p {
-  margin-bottom: 0.5rem; /* 8px */
-  font-size: 0.875rem; /* 14px */
+  margin-bottom: 0.5rem;
+  /* 8px */
+  font-size: 0.875rem;
+  /* 14px */
 }
 
 .footer-content a {
@@ -358,34 +513,83 @@ img {
 
 /* Hero Section */
 .hero {
-  padding: 5rem 0; /* 80px */
+  padding: 1rem 0;
   text-align: center;
-  background-color: var(--mainha-light); /* Cor de fundo suave */
+  background-color: var(--mainha-light);
   background-image: linear-gradient(to bottom, rgba(247, 187, 187, 0.8), rgba(255, 249, 249, 0.9)), url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23BE8B8A' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M0 0h40v40H0V0zm20 20c5.523 0 10-4.477 10-10S25.523 0 20 0 10 4.477 10 10s4.477 10 10 10z'/%3E%3C/g%3E%3C/svg%3E");
   background-blend-mode: overlay;
 }
 
-.hero-title {
-  font-size: 3rem; /* 48px */
-  color: var(--mainha-dark);
-  margin-bottom: 1rem; /* 16px */
-  font-family: 'Great Vibes', cursive;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0rem; /* Reduzido de 0.5rem para 0.25rem */
+}
+
+.logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-image {
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 0;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
   color: var(--mainha-dark);
-  margin-bottom: 2rem; /* 32px */
+  margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.2rem; /* Adicionado para ajustar o espaçamento vertical */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0;
+  }
+  
+  .logo-image {
+    max-width: 250px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 0;
+  }
+  
+  .logo-image {
+    max-width: 220px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
 }
 
 /* Featured Cakes Section */
 .featured-cakes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem; /* 32px */
+  gap: 2rem;
+  /* 32px */
 }
 
 /* About Section */
@@ -400,7 +604,8 @@ img {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 1.5rem; /* 24px */
+  margin: 0 auto 1.5rem;
+  /* 24px */
   box-shadow: 0 0 15px rgba(110, 52, 61, 0.2);
 }
 
@@ -408,12 +613,14 @@ img {
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem; /* 32px */
+  gap: 2rem;
+  /* 32px */
 }
 
 .testimonial-card {
   background-color: var(--white);
-  padding: 2rem; /* 32px */
+  padding: 2rem;
+  /* 32px */
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
   text-align: center;
@@ -424,13 +631,15 @@ img {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 1rem; /* 16px */
+  margin: 0 auto 1rem;
+  /* 16px */
 }
 
 .testimonial-text {
   font-style: italic;
   color: var(--gray-600);
-  margin-bottom: 1rem; /* 16px */
+  margin-bottom: 1rem;
+  /* 16px */
 }
 
 .testimonial-author {
@@ -442,39 +651,54 @@ img {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem; /* 48px */
+  gap: 3rem;
+  /* 48px */
 }
 
 @media (min-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .cake-image-container {
+    height: 180px;
+  }
+
   .section-title {
-    font-size: 2.5rem; /* 40px */
+    font-size: 2.5rem;
+    /* 40px */
   }
+
   .hero-title {
-    font-size: 4rem; /* 64px */
+    font-size: 4rem;
+    /* 64px */
   }
+
   .hero-subtitle {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
+    /* 24px */
   }
 }
 
 /* Cakes Page */
 .cakes-filter {
-  margin-bottom: 2rem; /* 32px */
+  margin-bottom: 2rem;
+  /* 32px */
   text-align: center;
 }
 
 .cakes-filter button {
-  margin: 0 0.5rem; /* 8px */
-  margin-bottom: 0.5rem; /* 8px */
+  margin: 0 0.5rem;
+  /* 8px */
+  margin-bottom: 0.5rem;
+  /* 8px */
 }
 
 .cakes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem; /* 32px */
+  gap: 2rem;
+  /* 32px */
 }
 
 /* Toaster (simples) */
@@ -501,7 +725,8 @@ img {
 }
 
 .toast-destructive {
-  background-color: #e53e3e; /* Cor vermelha para erros */
+  background-color: #e53e3e;
+  /* Cor vermelha para erros */
 }
 
 .toast-title {
@@ -529,7 +754,8 @@ img {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 100%; /* Abaixo do navbar */
+    top: 100%;
+    /* Abaixo do navbar */
     left: 0;
     background-color: var(--white);
     box-shadow: var(--shadow-md);

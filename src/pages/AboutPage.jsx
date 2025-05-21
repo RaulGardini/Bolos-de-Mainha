@@ -25,7 +25,7 @@ const AboutPage = () => {
           <img  
             alt="Mainha preparando um bolo"
             style={{ width: '200px', height: '200px', borderRadius: '50%', objectFit: 'cover', margin: '0 auto 2rem', display: 'block', border: '5px solid var(--mainha-light)' }}
-           src="https://images.unsplash.com/photo-1679592288345-6004b3f9bd37" />
+           src="/images/cakes/titia.jpeg" />
           
           <h2 style={{ color: 'var(--mainha-dark)', fontSize: '1.75rem', marginBottom: '1rem', textAlign: 'center' }}>Nossa Doce Jornada</h2>
           <p>
@@ -33,14 +33,6 @@ const AboutPage = () => {
           </p>
           <p>
             Desde pequena, Mainha aprendeu com sua avó os segredos da confeitaria caseira. Eram receitas simples, mas repletas de afeto, que transformavam ingredientes comuns em verdadeiras obras de arte comestíveis. Com o tempo, essa paixão cresceu e se tornou um sonho: compartilhar essas delícias com o mundo.
-          </p>
-          
-          <h3 style={{ color: 'var(--mainha-medium)', fontSize: '1.5rem', marginTop: '2rem', marginBottom: '0.5rem', textAlign: 'center' }}>Nossa Filosofia</h3>
-          <p>
-            Em "Bolos de Mainha", acreditamos que os melhores bolos são feitos com ingredientes de qualidade, uma pitada generosa de paciência e, acima de tudo, muito amor. Selecionamos cuidadosamente cada item, priorizando produtos frescos e locais sempre que possível. Não usamos conservantes nem ingredientes artificiais, pois o verdadeiro sabor está na simplicidade e na pureza.
-          </p>
-          <p>
-            Nossa missão é levar até você não apenas um bolo, mas uma experiência. Queremos que cada mordida traga conforto, alegria e a sensação de um abraço quentinho de Mainha. Seja para celebrar uma ocasião especial, presentear alguém querido ou simplesmente adoçar o seu dia, nossos bolos são feitos para criar memórias felizes.
           </p>
 
           <h3 style={{ color: 'var(--mainha-medium)', fontSize: '1.5rem', marginTop: '2rem', marginBottom: '0.5rem', textAlign: 'center' }}>Conheça Mainha</h3>

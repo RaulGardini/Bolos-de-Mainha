@@ -1,24 +1,75 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 
 const CakeCard = ({ cake }) => {
+  const [showSizes, setShowSizes] = useState(false);
+
+  const formatDescription = (description) => {
+    const parts = description.split('•');
+    
+    return parts.map((part, index) => {
+      if (index === 0 && part.trim() === '') return null;
+      
+      return (
+        <div key={index} className="description-item">
+          {index > 0 && <span className="bullet">•</span>} {part.trim()}
+        </div>
+      );
+    });
+  };
+
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
       <Card className="card">
-        <CardHeader>
-          <img  className="card-image" alt={cake.name} src="https://images.unsplash.com/photo-1689957001836-2b76b99d1ea0" />
+        <CardHeader className="card-header p-0">
+          <div className="cake-image-container">
+            <img 
+              src={cake.image} 
+              alt={cake.name} 
+              className="cake-image"
+            />
+          </div>
         </CardHeader>
         <CardContent className="card-content">
           <CardTitle className="card-title">{cake.name}</CardTitle>
-          <CardDescription className="card-description">{cake.shortDescription}</CardDescription>
-          <p className="card-price">R$ {cake.price.toFixed(2)}</p>
+          <div className="card-description">
+            {formatDescription(cake.shortDescription)}
+          </div>
+          
+          <div className="cake-sizes-table">
+            <table className="sizes-table">
+              <thead>
+                <tr>
+                  <th>Tamanho</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cake.sizes.map((sizeOption, index) => (
+                  <tr key={index}>
+                    <td>{sizeOption.size}</td>
+                    <td>R$ {sizeOption.price.toFixed(2)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </CardContent>
       </Card>
+
+      <style jsx>{`
+        .description-item {
+          margin-bottom: 4px;
+        }
+        .bullet {
+          display: inline-block;
+          margin-right: 4px;
+        }
+      `}</style>
     </motion.div>
   );
 };

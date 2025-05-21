@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container footer-content">
         <p>&copy; {new Date().getFullYear()} Bolos de Mainha. Todos os direitos reservados.</p>
         <p>
-          Feito com <span style={{ color: 'var(--mainha-light)' }}>❤</span> por Mainha e seus ajudantes.
+          Feito com <span style={{ color: 'var(--mainha-light)' }}>❤</span> por Mainha.
         </p>
       </div>
     </motion.footer>
