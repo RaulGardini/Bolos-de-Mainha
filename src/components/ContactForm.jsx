@@ -39,7 +39,7 @@ const WhatsAppContact = () => {
         overflow: 'hidden'
       }}>
         <img 
-          src="/images/outros/WhatsApp.svg.webp" 
+          src="/images/outros/whatsapp.png" 
           alt="WhatsApp" 
           style={{
             width: '100%',
