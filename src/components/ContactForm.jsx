@@ -1,114 +1,95 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/components/ui/toast'; 
 import { motion } from 'framer-motion';
 
-const ContactForm = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulação de envio
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
-    console.log('Form data submitted:', formData);
-    toast({
-      title: "Mensagem Enviada!",
-      description: "Obrigado por entrar em contato. Responderemos em breve.",
-      variant: "default",
-    });
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setIsSubmitting(false);
-  };
+const WhatsAppContact = () => {
+  const whatsappLink = "https://web.whatsapp.com/send/?phone=5585998097777&amp;text&amp;type=phone_number&amp;app_absent=0"; // Substitua pelo seu número
 
   return (
-    <motion.form 
-      onSubmit={handleSubmit}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2, duration: 0.5 }}
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+        padding: '2rem',
+        gap: '2rem'
+      }}
     >
-      <h3 style={{ color: 'var(--mainha-dark)', fontSize: '1.5rem', marginBottom: '1.5rem', textAlign: 'center' }}>Envie uma Mensagem</h3>
-      <div className="form-group">
-        <label htmlFor="name" className="form-label">Nome Completo</label>
-        <Input 
-          type="text" 
-          name="name" 
-          id="name" 
-          value={formData.name} 
-          onChange={handleChange} 
-          placeholder="Seu nome" 
-          required 
-          className="form-input"
+      <h3 style={{ 
+        color: 'var(--mainha-dark)', 
+        fontSize: '1.5rem', 
+        marginBottom: '1rem' 
+      }}>
+        Entre em Contato Conosco
+      </h3>
+      
+      {/* Imagem do WhatsApp */}
+      <div style={{
+        width: '200px',
+        height: '200px',
+        borderRadius: '12px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        overflow: 'hidden'
+      }}>
+        <img 
+          src="/images/outros/WhatsApp.svg.webp" 
+          alt="WhatsApp" 
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain'
+          }}
         />
       </div>
-      <div className="form-group">
-        <label htmlFor="email" className="form-label">Seu Melhor E-mail</label>
-        <Input 
-          type="email" 
-          name="email" 
-          id="email" 
-          value={formData.email} 
-          onChange={handleChange} 
-          placeholder="seuemail@exemplo.com" 
-          required 
-          className="form-input"
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="subject" className="form-label">Assunto</label>
-        <Input 
-          type="text" 
-          name="subject" 
-          id="subject" 
-          value={formData.subject} 
-          onChange={handleChange} 
-          placeholder="Sobre o que gostaria de falar?" 
-          required 
-          className="form-input"
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="message" className="form-label">Sua Mensagem</label>
-        <Textarea 
-          name="message" 
-          id="message" 
-          value={formData.message} 
-          onChange={handleChange} 
-          placeholder="Escreva sua mensagem aqui..." 
-          rows="5" 
-          required 
-          className="form-textarea"
-        />
-      </div>
-      <Button 
-        type="submit" 
-        variant="primary" 
-        disabled={isSubmitting} 
-        className="button-primary"
-        style={{ width: '100%', padding: '0.875rem' }}
+
+      {/* Botão do WhatsApp */}
+      <Button
+        onClick={() => window.open(whatsappLink, '_blank')}
+        style={{
+          backgroundColor: '#25D366',
+          color: 'white',
+          padding: '0.875rem 2rem',
+          fontSize: '1.1rem',
+          fontWeight: '600',
+          border: 'none',
+          borderRadius: '8px',
+          cursor: 'pointer',
+          transition: 'all 0.3s ease',
+          boxShadow: '0 4px 12px rgba(37, 211, 102, 0.3)',
+          minWidth: '200px'
+        }}
+        onMouseEnter={(e) => {
+          e.target.style.backgroundColor = '#128C7E';
+          e.target.style.transform = 'translateY(-2px)';
+          e.target.style.boxShadow = '0 6px 16px rgba(37, 211, 102, 0.4)';
+        }}
+        onMouseLeave={(e) => {
+          e.target.style.backgroundColor = '#25D366';
+          e.target.style.transform = 'translateY(0)';
+          e.target.style.boxShadow = '0 4px 12px rgba(37, 211, 102, 0.3)';
+        }}
       >
-        {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
+        Fale Conosco
       </Button>
-    </motion.form>
+
+      <p style={{
+        color: 'var(--gray-600)',
+        fontSize: '0.9rem',
+        maxWidth: '400px',
+        lineHeight: '1.5'
+      }}>
+        Clique no botão acima para falar diretamente conosco pelo WhatsApp. 
+        Estamos prontos para atender você!
+      </p>
+    </motion.div>
   );
 };
 
-export default ContactForm;
+export default WhatsAppContact;
