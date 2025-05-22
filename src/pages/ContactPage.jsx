@@ -27,20 +27,17 @@ const ContactPage = () => {
           >
             <h2 style={{ color: 'var(--mainha-dark)', fontSize: '1.75rem', marginBottom: '1.5rem' }}>Fale Conosco</h2>
             <p style={{ marginBottom: '1.5rem', color: 'var(--gray-700)' }}>
-              Adoraríamos ouvir de você! Seja para fazer um pedido, tirar dúvidas ou simplesmente dizer olá, nossa equipe está pronta para ajudar.
+              Tem alguma dúvida, quer fazer um pedido ou conversar com a vendedora? É só chamar no WhatsApp! Estamos disponíveis para te atender com carinho e agilidade.
             </p>
             
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
               <Phone size={24} style={{ color: 'var(--mainha-medium)', marginRight: '0.75rem' }} />
-              <span style={{ color: 'var(--gray-700)' }}>(71) 99999-8888</span>
+              <span style={{ color: 'var(--gray-700)' }}>(85) 99809-7777</span>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
-              <Mail size={24} style={{ color: 'var(--mainha-medium)', marginRight: '0.75rem' }} />
-              <span style={{ color: 'var(--gray-700)' }}>contato@bolosdemainha.com.br</span>
-            </div>
+            
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
               <Clock size={24} style={{ color: 'var(--mainha-medium)', marginRight: '0.75rem' }} />
-              <span style={{ color: 'var(--gray-700)' }}>Segunda a Sábado, das 9h às 18h</span>
+              <span style={{ color: 'var(--gray-700)' }}>Aberta 24h</span>
             </div>
             <p style={{ marginTop: '1.5rem', fontSize: '0.9rem', color: 'var(--gray-600)'}}>
               Pedidos especiais podem precisar de antecedência. Consulte-nos!

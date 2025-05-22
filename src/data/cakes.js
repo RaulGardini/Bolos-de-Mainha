@@ -2,7 +2,7 @@ export const cakes = [
   {
     id: '1',
     name: 'Bolo de Chocolate',
-    category: 'Tradicionais',
+    category: 'Recheados',
     sizes: [
       { size: 'Pequeno (15cm)', price: 160.00 },
       { size: 'Médio (20cm)', price: 200.00 },
@@ -15,7 +15,7 @@ export const cakes = [
   {
     id: '2',
     name: 'Bolo Brigadeiro 1',
-    category: 'Tradicionais',
+    category: 'Recheados',
     sizes: [
       { size: 'Pequeno (15cm)', price: 170.00 },
       { size: 'Médio (20cm)', price: 240.00 },
@@ -29,7 +29,7 @@ export const cakes = [
   {
     id: '3',
     name: 'Bolo Dois Amores',
-    category: 'Tradicionais',
+    category: 'Recheados',
     sizes: [
       { size: 'Pequeno (15cm)', price: 160.00 },
       { size: 'Médio (20cm)', price: 200.00 }
@@ -41,7 +41,7 @@ export const cakes = [
   {
     id: '4',
     name: 'Bolo Brigadeiro 2',
-    category: 'Tradicionais',
+    category: 'Recheados',
     sizes: [
       { size: 'Pequeno (15cm)', price: 150.00 },
       { size: 'Médio (20cm)', price: 200.00 },
@@ -54,7 +54,7 @@ export const cakes = [
   {
     id: '5',
     name: 'Bolo Oreo',
-    category: 'Especiais',
+    category: 'Recheados',
     sizes: [
       { size: 'Pequeno (15cm)', price: 165.00 }
     ],
@@ -65,7 +65,7 @@ export const cakes = [
   {
     id: '6',
     name: 'Bolo Maracujá',
-    category: 'Frutados',
+    category: 'Recheados',
     sizes: [
       { size: 'Médio (20cm)', price: 190.00 }
     ],
@@ -76,7 +76,7 @@ export const cakes = [
   {
     id: '7',
     name: 'Bolo Morango',
-    category: 'Frutados',
+    category: 'Recheados',
     sizes: [
       { size: 'Pequeno (15cm)', price: 160.00 },
       { size: 'Médio (18cm)', price: 190.00 },
@@ -89,7 +89,7 @@ export const cakes = [
   {
     id: '8',
     name: 'Bolo Choconinho',
-    category: 'Especiais',
+    category: 'Recheados',
     sizes: [
       { size: 'Pequeno (15cm)', price: 160.00 },
       { size: 'Médio (20cm)', price: 210.00 }
@@ -101,7 +101,7 @@ export const cakes = [
   {
     id: '9',
     name: 'Bolo Prestígio',
-    category: 'Tradicionais',
+    category: 'Recheados',
     sizes: [
       { size: 'Pequeno (15cm)', price: 135.00 },
       { size: 'Médio (20cm)', price: 195.00 },
@@ -114,7 +114,7 @@ export const cakes = [
   {
     id: '10',
     name: 'Bolo Prestígio 2',
-    category: 'Tradicionais',
+    category: 'Recheados',
     sizes: [
       { size: 'Pequeno (15cm)', price: 140.00 },
       { size: 'Médio (20cm)', price: 190.00 },
@@ -127,7 +127,7 @@ export const cakes = [
   {
     id: '11',
     name: 'Bolo Dragê',
-    category: 'Especiais',
+    category: 'Dragê',
     sizes: [
       { size: 'Pequeno (15cm)', price: 160.00 },
       { size: 'Médio (20cm)', price: 200.00 }
@@ -139,7 +139,7 @@ export const cakes = [
   {
     id: '12',
     name: 'Bolo Dragê 2',
-    category: 'Frutados',
+    category: 'Dragê',
     sizes: [
       { size: 'Pequeno (15cm)', price: 160.00 },
       { size: 'Médio (20cm)', price: 200.00 }
@@ -151,7 +151,7 @@ export const cakes = [
   {
     id: '13',
     name: 'Bolo Red Velvet 1',
-    category: 'Especiais',
+    category: 'Red Velvet',
     sizes: [
       { size: 'Pequeno (15cm)', price: 140.00 },
       { size: 'Médio (20cm)', price: 200.00 },
@@ -164,7 +164,7 @@ export const cakes = [
   {
     id: '14',
     name: 'Bolo Red Velvet 2',
-    category: 'Especiais',
+    category: 'Red Velvet',
     sizes: [
       { size: 'Pequeno (15cm)', price: 130.00 },
       { size: 'Médio (20cm)', price: 185.00 }
@@ -176,7 +176,7 @@ export const cakes = [
   {
     id: '15',
     name: 'Bolo Red Velvet 3',
-    category: 'Especiais',
+    category: 'Red Velvet',
     sizes: [
       { size: 'Pequeno (15cm)', price: 125.00 },
       { size: 'Médio (20cm)', price: 175.00 }
@@ -306,7 +306,7 @@ export const cakes = [
   {
     id: '26',
     name: 'Bolo Dragê 3',
-    category: 'Especiais',
+    category: 'Dragê',
     sizes: [
       { size: 'Pequeno (15cm)', price: 140.00 },
       { size: 'Médio (20cm)', price: 175.00 }
@@ -331,7 +331,7 @@ export const cakes = [
   {
     id: '28',
     name: 'Bolo Gerbera',
-    category: 'Decorados',
+    category: 'Especiais',
     sizes: [
       { size: 'Pequeno (15cm)', price: 170.00 },
       { size: 'Médio (20cm)', price: 220.00 },
@@ -370,7 +370,7 @@ export const cakes = [
   {
     id: '31',
     name: 'Bolo Primeira Comunhão',
-    category: 'Decorados',
+    category: 'Especiais',
     sizes: [
       { size: 'Pequeno (15cm)', price: 170.00 },
       { size: 'Médio (20cm)', price: 220.00 }
@@ -382,7 +382,7 @@ export const cakes = [
   {
     id: '32',
     name: 'Bolo Vintage',
-    category: 'Decorados',
+    category: 'Especiais',
     sizes: [
       { size: 'Pequeno (15cm)', price: 180.00 },
       { size: 'Médio (20cm)', price: 240.00 }
@@ -394,7 +394,7 @@ export const cakes = [
   {
     id: '33',
     name: 'Bolo Rosas',
-    category: 'Decorados',
+    category: 'Especiais',
     sizes: [
       { size: 'Pequeno (15cm)', price: 180.00 },
       { size: 'Médio (20cm)', price: 240.00 }
@@ -406,7 +406,7 @@ export const cakes = [
   {
     id: '34',
     name: 'Bolo Vintage Decorado',
-    category: 'Decorados',
+    category: 'Especiais',
     sizes: [
       { size: 'Pequeno (15cm)', price: 180.00 },
       { size: 'Médio (20cm)', price: 240.00 }
@@ -454,7 +454,7 @@ export const cakes = [
   {
     id: '38',
     name: 'Bolo de Rosas',
-    category: 'Decorados',
+    category: 'Especiais',
     sizes: [
       { size: 'Pequeno (15cm)', price: 160.00 },
       { size: 'Médio (20cm)', price: 210.00 }
