@@ -100,19 +100,6 @@ export const cakes = [
   },
   {
     id: '9',
-    name: 'Bolo Prestígio',
-    category: 'Recheados',
-    sizes: [
-      { size: 'Pequeno (15cm)', price: 135.00 },
-      { size: 'Médio (20cm)', price: 195.00 },
-      { size: 'Grande (24cm)', price: 230.00 }
-    ],
-    shortDescription: '• Massa de chocolate 70% • Recheio de brigadeiro de coco • Cobertura brigadeiro meio amargo e beijinhos no topo',
-    image: '/images/cakes/BoloPrestigio.png',
-    isFeatured: false,
-  },
-  {
-    id: '10',
     name: 'Bolo Prestígio 2',
     category: 'Recheados',
     sizes: [
@@ -125,7 +112,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '11',
+    id: '10',
     name: 'Bolo Dragê',
     category: 'Dragê',
     sizes: [
@@ -137,7 +124,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '12',
+    id: '11',
     name: 'Bolo Dragê 2',
     category: 'Dragê',
     sizes: [
@@ -149,7 +136,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '13',
+    id: '12',
     name: 'Bolo Red Velvet 1',
     category: 'Red Velvet',
     sizes: [
@@ -162,7 +149,7 @@ export const cakes = [
     isFeatured: true,
   },
   {
-    id: '14',
+    id: '13',
     name: 'Bolo Red Velvet 2',
     category: 'Red Velvet',
     sizes: [
@@ -174,7 +161,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '15',
+    id: '14',
     name: 'Bolo Red Velvet 3',
     category: 'Red Velvet',
     sizes: [
@@ -186,7 +173,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '16',
+    id: '15',
     name: 'Bolo Chocolatudo',
     category: 'Simples',
     sizes: [
@@ -198,7 +185,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '17',
+    id: '16',
     name: 'Bolo de Cenoura com Brigadeiro',
     category: 'Simples',
     sizes: [
@@ -210,7 +197,7 @@ export const cakes = [
     isFeatured: true,
   },
   {
-    id: '18',
+    id: '17',
     name: 'Bolo de Baunilha com Ninho',
     category: 'Simples',
     sizes: [
@@ -222,7 +209,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '19',
+    id: '18',
     name: 'Bolo Capim Santo com Pistache',
     category: 'Especiais',
     sizes: [
@@ -233,7 +220,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '20',
+    id: '19',
     name: 'Bolo de Limão',
     category: 'Simples',
     sizes: [
@@ -244,7 +231,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '21',
+    id: '20',
     name: 'Bolo Formigueiro',
     category: 'Simples',
     sizes: [
@@ -255,7 +242,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '22',
+    id: '21',
     name: 'Nuked Cake Simples',
     category: 'Nuked Cakes',
     sizes: [
@@ -267,7 +254,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '23',
+    id: '22',
     name: 'Nuked Cake Dois Amores',
     category: 'Nuked Cakes',
     sizes: [
@@ -279,7 +266,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '24',
+    id: '23',
     name: 'Nuked Cake Chocolate',
     category: 'Nuked Cakes',
     sizes: [
@@ -291,7 +278,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '25',
+    id: '24',
     name: 'Bolo Amor à Primeira Garfada',
     category: 'Especiais',
     sizes: [
@@ -304,7 +291,7 @@ export const cakes = [
     isFeatured: true,
   },
   {
-    id: '26',
+    id: '25',
     name: 'Bolo Dragê 3',
     category: 'Dragê',
     sizes: [
@@ -316,7 +303,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '27',
+    id: '26',
     name: 'Bolo Delícia',
     category: 'Especiais',
     sizes: [
@@ -329,7 +316,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '28',
+    id: '27',
     name: 'Bolo Gerbera',
     category: 'Especiais',
     sizes: [
@@ -342,7 +329,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '29',
+    id: '28',
     name: 'Bolo Crocante',
     category: 'Especiais',
     sizes: [
@@ -355,7 +342,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '30',
+    id: '29',
     name: 'Bolo Mesclado',
     category: 'Especiais',
     sizes: [
@@ -368,7 +355,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '31',
+    id: '30',
     name: 'Bolo Primeira Comunhão',
     category: 'Especiais',
     sizes: [
@@ -380,7 +367,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '32',
+    id: '31',
     name: 'Bolo Vintage',
     category: 'Especiais',
     sizes: [
@@ -392,7 +379,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '33',
+    id: '32',
     name: 'Bolo Rosas',
     category: 'Especiais',
     sizes: [
@@ -404,7 +391,7 @@ export const cakes = [
     isFeatured: true,
   },
   {
-    id: '34',
+    id: '33',
     name: 'Bolo Vintage Decorado',
     category: 'Especiais',
     sizes: [
@@ -416,7 +403,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '35',
+    id: '34',
     name: 'Bolo Pistache',
     category: 'Especiais',
     sizes: [
@@ -428,7 +415,7 @@ export const cakes = [
     isFeatured: true,
   },
   {
-    id: '36',
+    id: '35',
     name: 'Cupcakes',
     category: 'Cupcakes',
     sizes: [
@@ -439,7 +426,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '37',
+    id: '36',
     name: 'Naked Cake Morangos',
     category: 'Naked Cakes',
     sizes: [
@@ -452,7 +439,7 @@ export const cakes = [
     isFeatured: true,
   },
   {
-    id: '38',
+    id: '37',
     name: 'Bolo de Rosas',
     category: 'Especiais',
     sizes: [
@@ -464,7 +451,7 @@ export const cakes = [
     isFeatured: false,
   },
   {
-    id: '39',
+    id: '38',
     name: 'Naked Cake Brigadeiro',
     category: 'Naked Cakes',
     sizes: [
@@ -472,6 +459,53 @@ export const cakes = [
     ],
     shortDescription: '• Massa branca fofinha com recheio de ninho e brigadeiro meio amargo e brigadeiros no topo',
     image: '/images/cakes/NukedCakeBrigadeiro.png',
+    isFeatured: false,
+  },
+  {
+    id: '39',
+    name: 'Nuked Cake Pistache',
+    category: 'Nuked Cakes',
+    sizes: [
+      { size: 'Pequeno (15cm)', price: 160.00 },
+      { size: 'Médio (20cm)', price: 220.00 }
+    ],
+    shortDescription: '• Massa branca úmida e deliciosa com recheio de brigadeiro de pistache e geleia artesanal de morango. E granulados de pistache',
+    image: '/images/cakes/NukedCakePistache.png',
+    isFeatured: false,
+  },
+  {
+    id: '40',
+    name: 'Bolo de Rosas 2',
+    category: 'Especiais',
+    sizes: [
+      { size: 'Pequeno (15cm)', price: 180.00 },
+      { size: 'Médio (20cm)', price: 230.00 }
+    ],
+    shortDescription: '• Massa branca úmida efofinha e recheio de ninhoe brigadeiro meio amargo ccrocante de amendoim ecobertura de ganache',
+    image: '/images/cakes/BoloDeRosas2.png',
+    isFeatured: false,
+  },
+  {
+    id: '41',
+    name: 'Bolo de Laçoes',
+    category: 'Especiais',
+    sizes: [
+      { size: 'Pequeno (15cm)', price: 170.00 },
+      { size: 'Médio (20cm)', price: 220.00 }
+    ],
+    shortDescription: '• Massa branca fofinha comrecheio de ninho ebrigadeiro meio amargo ecobertura de ganache dechocolate branco',
+    image: '/images/cakes/BoloDeLacos.png',
+    isFeatured: false,
+  },
+  {
+    id: '42',
+    name: 'Brownie',
+    category: 'Brownie',
+    sizes: [
+      { size: 'Médio (22cm)', price: 120.00 }
+    ],
+    shortDescription: '• Massa de brownie com chocolate meio amargo e cobertura de brigadeiro meio amargo',
+    image: '/images/cakes/Brownie.png',
     isFeatured: false,
   }
 ];

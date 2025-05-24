@@ -223,18 +223,24 @@ img {
 .cake-image-container {
   position: relative;
   width: 100%;
-  height: 200px; /* Altura fixa para todas as imagens de bolo */
+  height: 200px;
+  /* Altura fixa para todas as imagens de bolo */
   overflow: hidden;
-  border-radius: 8px 8px 0 0; /* Combina com o border radius do card no topo */
+  border-radius: 8px 8px 0 0;
+  /* Combina com o border radius do card no topo */
   display: flex;
-  justify-content: center; /* Centraliza a imagem horizontalmente se width < 100% */
+  justify-content: center;
+  /* Centraliza a imagem horizontalmente se width < 100% */
 }
 
 .cake-image {
-  width: 40%; /* Volte para 100% para cobrir todo o container */
+  width: 40%;
+  /* Volte para 100% para cobrir todo o container */
   height: 100%;
-  object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
-  object-position: center; /* Centraliza a imagem */
+  object-fit: cover;
+  /* Garante que a imagem cubra a área sem distorção */
+  object-position: center;
+  /* Centraliza a imagem */
 }
 
 .card {
@@ -278,7 +284,8 @@ img {
 /* Estilos para a tabela de tamanhos e preços */
 .cake-sizes-table {
   margin-top: 1rem;
-  overflow-x: auto; /* Para garantir que a tabela seja responsiva em telas pequenas */
+  overflow-x: auto;
+  /* Para garantir que a tabela seja responsiva em telas pequenas */
 }
 
 .sizes-table {
@@ -296,8 +303,10 @@ img {
 
 .sizes-table th {
   font-weight: 600;
-  color: #6e343d; /* Cor da marca "Bolos de Mainha" */
-  background-color: #f9f4f5; /* Cor de fundo suave que combina com a marca */
+  color: #6e343d;
+  /* Cor da marca "Bolos de Mainha" */
+  background-color: #f9f4f5;
+  /* Cor de fundo suave que combina com a marca */
 }
 
 .sizes-table tr:last-child td {
@@ -529,7 +538,8 @@ img {
 .logo-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 0rem; /* Reduzido de 0.5rem para 0.25rem */
+  margin-bottom: 0rem;
+  /* Reduzido de 0.5rem para 0.25rem */
 }
 
 .logo-wrapper {
@@ -552,18 +562,19 @@ img {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.2rem; /* Adicionado para ajustar o espaçamento vertical */
+  margin-top: 0.2rem;
+  /* Adicionado para ajustar o espaçamento vertical */
 }
 
 @media (max-width: 768px) {
   .hero {
     padding: 3rem 0;
   }
-  
+
   .logo-image {
     max-width: 250px;
   }
-  
+
   .hero-subtitle {
     font-size: 1.1rem;
     max-width: 90%;
@@ -574,11 +585,11 @@ img {
   .hero {
     padding: 2rem 0;
   }
-  
+
   .logo-image {
     max-width: 220px;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
@@ -745,6 +756,36 @@ img {
   cursor: pointer;
   padding: 0.25rem;
   line-height: 1;
+}
+
+/* Parte History */
+
+.history {
+  background-color: #CB9794;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  margin-bottom: -4rem;
+}
+
+.titulo {
+  color: #6D343D;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.texto {
+  color: black;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.6;
+  font-size: 1.1rem;
 }
 
 /* Mobile Menu */
