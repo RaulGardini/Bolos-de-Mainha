@@ -2,7 +2,7 @@
 import React from 'react';
 import Hero from '@/components/Hero';
 import FeaturedCakes from '@/components/FeaturedCakes';
-import History from '@/components/History';
+import Observacao from '@/components/Observacao';
 import AboutSection from '@/components/AboutSection';
 import Testimonials from '@/components/Testimonials';
 import { motion } from 'framer-motion';
@@ -24,7 +24,7 @@ const HomePage = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         <FeaturedCakes />
-        <History/>
+        <Observacao/>
       </motion.section>
     </div>
   );

@@ -29,7 +29,7 @@ const AboutPage = () => {
           <h2 style={{ color: 'var(--mainha-dark)', fontSize: '1.25rem', marginBottom: '3rem', textAlign: 'center' }}>Confeiteira: Rosiane Macedo</h2>
           <h2 style={{ color: 'var(--mainha-dark)', fontSize: '1.75rem', marginBottom: '1rem', textAlign: 'center' }}>Nossa Doce Jornada</h2>
           <p>
-            Bem-vindo ao universo de "Bolos de Mainha", um lugar onde cada fatia conta uma história de amor, tradição e sabor inigualável. Nossa jornada começou na cozinha de Mainha, um espaço mágico onde aromas de baunilha, chocolate e frutas frescas se misturavam com risadas e carinho.
+            Sempre amei bolos. Encontrei nesse nicho uma oportunidade de me dedicar a algo feito com muito amor. Foi em 2021 que tudo começou, com o incentivo da minha família, amigos e irmãos da Comunidade Shalom. Quanto mais eu buscava aprender, mais me identificava com a confeitaria. Sou apaixonada por chocolate e percebi que poderia criar verdadeiras maravilhas com uma ganache deliciosa e resistente. Além disso, os conhecimentos adquiridos na engenharia me ajudam a balancear receitas incríveis e encontrar o sabor ideal.
           </p>
           <p>
             Obrigado por fazer parte da nossa família "Bolos de Mainha". Esperamos que você aprecie nossos bolos tanto quanto nós amamos fazê-los!
