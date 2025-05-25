@@ -1,6 +1,11 @@
 /* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
 
+html {
+  color-scheme: light;
+  background-color: #fff;
+}
+
 /* Variáveis de Cor Globais */
 :root {
   --mainha-light: #F7BBBB;

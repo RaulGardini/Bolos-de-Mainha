@@ -10,7 +10,7 @@ const Observacao = () => {
     <>
     <div className='observacao'>
         <h1 className='titulo'>Observação</h1>
-        <p className='texto'>Todos os nossos bolos são feitos por encomenda. Pedimos que os pedidos sejam realizados com antecedência mínima de 3 dias para bolos recheados e 24 horas para bolos simples.Para confirmar o pedido, é necessário o pagamento de 50% no ato do pedido.</p>
+        <p className='texto'>Todos os nossos bolos são feitos por encomenda. Pedimos que os pedidos sejam realizados com antecedência mínima de 3 dias para bolos recheados e 24 horas para bolos simples. Para confirmar o pedido, é necessário o pagamento de 50% no ato do pedido.</p>
     </div>
     </>
   );
