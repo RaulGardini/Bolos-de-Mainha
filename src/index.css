@@ -1,25 +1,41 @@
 /* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
 
-/* CORREÇÃO PRINCIPAL: Força o tema claro sempre */
-html {
-  color-scheme: light only; /* Mudança principal aqui */
-  background-color: #fff;
+/* PROTEÇÃO MÁXIMA CONTRA DARK MODE */
+* {
+  color-scheme: light only !important;
 }
 
-/* Alternativa mais específica para garantir que funcione */
-html, body {
+html {
   color-scheme: light only !important;
   background-color: #fff !important;
+  background: #fff !important;
 }
 
-/* Força cores específicas para elementos que podem ser afetados */
+html, body {
+  color-scheme: light only !important;
+  background-color: #FFF9F9 !important;
+  background: #FFF9F9 !important;
+  color: #333333 !important;
+}
+
+/* Força todos os elementos a usar tema claro */
 *, *::before, *::after {
-  color-scheme: light only;
+  color-scheme: light only !important;
+  -webkit-color-scheme: light only !important;
+}
+
+/* Proteção específica para WebKit (Safari mobile) */
+@supports (-webkit-appearance: none) {
+  *, *::before, *::after {
+    color-scheme: light only !important;
+    -webkit-color-scheme: light only !important;
+  }
 }
 
 /* Variáveis de Cor Globais */
 :root {
+  color-scheme: light only !important;
   --mainha-light: #F7BBBB;
   --mainha-medium: #BE8B8A;
   --mainha-dark: #6D343D;
