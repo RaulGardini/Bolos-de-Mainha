@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 
 const WhatsAppContact = () => {
-  const whatsappLink = "https://wa.me/5585998097777"; // Substitua pelo seu número
+  const whatsappLink = "https://wa.me/5585998097777";
 
   return (
     <motion.div
