@@ -33,6 +33,60 @@ html, body {
   }
 }
 
+/* PROTEÇÃO MOBILE CONTRA DARK MODE */
+/* Proteção específica para elementos que podem ser afetados pelo dark mode do sistema */
+@media (prefers-color-scheme: dark) {
+  *, *::before, *::after {
+    color-scheme: light only !important;
+    -webkit-color-scheme: light only !important;
+  }
+  
+  html, body {
+    background-color: #FFF9F9 !important;
+    color: #333333 !important;
+  }
+  
+  /* Força elementos específicos que costumam ser problemáticos */
+  .card, .navbar, .form-input, .form-textarea, .sizes-table, .testimonial-card {
+    background-color: #FFFFFF !important;
+    color: #333333 !important;
+  }
+}
+
+/* Proteção móvel específica */
+@media screen and (max-width: 768px) {
+  *, *::before, *::after {
+    color-scheme: light only !important;
+    -webkit-color-scheme: light only !important;
+  }
+  
+  html, body {
+    background-color: #FFF9F9 !important;
+    background: #FFF9F9 !important;
+    color: #333333 !important;
+  }
+}
+
+/* Proteção para modo escuro em dispositivos iOS */
+@supports (-webkit-touch-callout: none) {
+  @media (prefers-color-scheme: dark) {
+    *, *::before, *::after {
+      -webkit-color-scheme: light only !important;
+      color-scheme: light only !important;
+    }
+    
+    html, body {
+      background-color: #FFF9F9 !important;
+      color: #333333 !important;
+    }
+    
+    .card, .navbar, .form-input, .form-textarea, .sizes-table, .testimonial-card {
+      background-color: #FFFFFF !important;
+      color: #333333 !important;
+    }
+  }
+}
+
 /* Variáveis de Cor Globais */
 :root {
   color-scheme: light only !important;
