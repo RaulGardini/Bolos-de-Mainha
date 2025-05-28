@@ -79,9 +79,9 @@ const CakesPage = () => {
           </AnimatePresence>
         </motion.div>
         <div className='tamanhos'>
-          <p style={{marginTop: "30px", marginBottom: "0", fontSize: "0.95em"}}>tamanho 15cm serve de 12 à 15 fatias</p>
-          <p style={{marginBottom: "0", fontSize: "0.95em"}}>tamanho 20cm serve de 20 à 24 fatias</p>
-          <p style={{marginBottom: "-40px", fontSize: "0.95em"}}>tamanho 24cm serve de 30 à 34 fatias</p>
+          <p className='tamanho1'>tamanho 15cm serve de 12 à 15 fatias</p>
+          <p className='tamanho2'>tamanho 20cm serve de 20 à 24 fatias</p>
+          <p className='tamanho3'>tamanho 24cm serve de 30 à 34 fatias</p>
         </div>
       </div>
     </div>

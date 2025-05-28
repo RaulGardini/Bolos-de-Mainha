@@ -12,7 +12,8 @@ html {
   background: #fff !important;
 }
 
-html, body {
+html,
+body {
   color-scheme: light only !important;
   background-color: #FFF9F9 !important;
   background: #FFF9F9 !important;
@@ -20,14 +21,19 @@ html, body {
 }
 
 /* Força todos os elementos a usar tema claro */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   color-scheme: light only !important;
   -webkit-color-scheme: light only !important;
 }
 
 /* Proteção específica para WebKit (Safari mobile) */
 @supports (-webkit-appearance: none) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     color-scheme: light only !important;
     -webkit-color-scheme: light only !important;
   }
@@ -36,18 +42,27 @@ html, body {
 /* PROTEÇÃO MOBILE CONTRA DARK MODE */
 /* Proteção específica para elementos que podem ser afetados pelo dark mode do sistema */
 @media (prefers-color-scheme: dark) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     color-scheme: light only !important;
     -webkit-color-scheme: light only !important;
   }
-  
-  html, body {
+
+  html,
+  body {
     background-color: #FFF9F9 !important;
     color: #333333 !important;
   }
-  
+
   /* Força elementos específicos que costumam ser problemáticos */
-  .card, .navbar, .form-input, .form-textarea, .sizes-table, .testimonial-card {
+  .card,
+  .navbar,
+  .form-input,
+  .form-textarea,
+  .sizes-table,
+  .testimonial-card {
     background-color: #FFFFFF !important;
     color: #333333 !important;
   }
@@ -55,12 +70,16 @@ html, body {
 
 /* Proteção móvel específica */
 @media screen and (max-width: 768px) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     color-scheme: light only !important;
     -webkit-color-scheme: light only !important;
   }
-  
-  html, body {
+
+  html,
+  body {
     background-color: #FFF9F9 !important;
     background: #FFF9F9 !important;
     color: #333333 !important;
@@ -70,17 +89,26 @@ html, body {
 /* Proteção para modo escuro em dispositivos iOS */
 @supports (-webkit-touch-callout: none) {
   @media (prefers-color-scheme: dark) {
-    *, *::before, *::after {
+
+    *,
+    *::before,
+    *::after {
       -webkit-color-scheme: light only !important;
       color-scheme: light only !important;
     }
-    
-    html, body {
+
+    html,
+    body {
       background-color: #FFF9F9 !important;
       color: #333333 !important;
     }
-    
-    .card, .navbar, .form-input, .form-textarea, .sizes-table, .testimonial-card {
+
+    .card,
+    .navbar,
+    .form-input,
+    .form-textarea,
+    .sizes-table,
+    .testimonial-card {
       background-color: #FFFFFF !important;
       color: #333333 !important;
     }
@@ -123,15 +151,22 @@ html, body {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--background-color) !important; /* Força a cor de fundo */
-  color: var(--text-color) !important; /* Força a cor do texto */
+  background-color: var(--background-color) !important;
+  /* Força a cor de fundo */
+  color: var(--text-color) !important;
+  /* Força a cor do texto */
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* Força cores para elementos específicos que podem ser afetados pelo dark mode */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   color: var(--mainha-dark) !important;
   margin-bottom: 0.75rem;
@@ -429,9 +464,12 @@ img {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -442,9 +480,12 @@ img {
 }
 
 @keyframes pulse-gentle {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.8;
   }
@@ -808,6 +849,39 @@ img {
 
 .tamanhos {
   display: flex;
-  flex-direction: column; /* empilha em coluna */
-  align-items: center;     /* centraliza horizontalmente (opcional) */
+  flex-direction: column;
+  /* empilha em coluna */
+  align-items: center;
+  /* centraliza horizontalmente (opcional) */
+}
+
+.tamanho1 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.tamanho2 {
+  margin-bottom: 0;
+}
+
+.tamanho3 {
+  margin-bottom: -40px;
+}
+
+@media (max-width: 767px) {
+  .tamanho1 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 0.9em;
+  }
+
+  .tamanho2 {
+    margin-bottom: 0;
+    font-size: 0.9em;
+  }
+
+  .tamanho3 {
+    margin-bottom: -40px;
+    font-size: 0.9em;
+  }
 }
