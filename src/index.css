@@ -805,3 +805,9 @@ img {
     display: block;
   }
 }
+
+.tamanhos {
+  display: flex;
+  flex-direction: column; /* empilha em coluna */
+  align-items: center;     /* centraliza horizontalmente (opcional) */
+}

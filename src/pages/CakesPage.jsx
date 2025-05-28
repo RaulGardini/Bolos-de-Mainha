@@ -78,11 +78,11 @@ const CakesPage = () => {
             ))}
           </AnimatePresence>
         </motion.div>
-        {filteredCakes.length === 0 && (
-          <p className="text-center" style={{ marginTop: '2rem' }}>
-            Nenhum bolo encontrado para esta categoria.
-          </p>
-        )}
+        <div className='tamanhos'>
+          <p style={{marginTop: "30px", marginBottom: "0"}}>tamanho 15cm serve de 12 à 15 fatias</p>
+          <p style={{marginBottom: "0"}}>tamanho 20cm serve de 20 à 24 fatias</p>
+          <p style={{marginBottom: "-40px"}}>tamanho 24cm serve de 30 à 34 fatias</p>
+        </div>
       </div>
     </div>
   );
