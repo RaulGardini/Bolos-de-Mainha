@@ -3,6 +3,7 @@ import React from 'react';
 import Hero from '@/components/Hero';
 import FeaturedCakes from '@/components/FeaturedCakes';
 import Observacao from '@/components/Observacao';
+import WhatsAppButton from '@/components/ui/WhatsAppButton';
 import AboutSection from '@/components/AboutSection';
 import Testimonials from '@/components/Testimonials';
 import { motion } from 'framer-motion';
@@ -26,6 +27,7 @@ const HomePage = () => {
         <FeaturedCakes />
         <Observacao/>
       </motion.section>
+      <WhatsAppButton />
     </div>
   );
 };
