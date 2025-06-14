@@ -7,7 +7,7 @@ const WhatsAppButton = () => (
     rel="noopener noreferrer"
     style={{
       position: 'fixed',
-      right: '20px', // alterado de left para right
+      right: '20px',
       bottom: '20px',
       zIndex: 1000,
       background: '#25D366',

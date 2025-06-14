@@ -17,7 +17,7 @@ export const cakes = [
     name: 'Bolo Brigadeiro 1',
     category: 'Recheados',
     sizes: [
-      { size: 'Pequeno (15cm)', price: 170.00 },
+      { size: 'Pequeno (15cm)', price: 180.00 },
       { size: 'Médio (20cm)', price: 240.00 },
       { size: 'Grande (24cm)', price: 290.00 }
     ],
@@ -43,9 +43,9 @@ export const cakes = [
     name: 'Bolo Brigadeiro 2',
     category: 'Recheados',
     sizes: [
-      { size: 'Pequeno (15cm)', price: 150.00 },
-      { size: 'Médio (20cm)', price: 200.00 },
-      { size: 'Grande (24cm)', price: 240.00 }
+      { size: 'Pequeno (15cm)', price: 170.00 },
+      { size: 'Médio (20cm)', price: 230.00 },
+      { size: 'Grande (24cm)', price: 280.00 }
     ],
     shortDescription: '• Massa de chocolate 70% • Recheio brigadeiro meio amargo • Cobertura brigadeiro meio amargo e granulados',
     image: '/images/cakes/BoloBrigadeiro2.png',
@@ -56,7 +56,7 @@ export const cakes = [
     name: 'Bolo Oreo',
     category: 'Recheados',
     sizes: [
-      { size: 'Pequeno (15cm)', price: 165.00 }
+      { size: 'Pequeno (15cm)', price: 180.00 }
     ],
     shortDescription: '• Massa de chocolate 70% • Recheio brigadeiro meio amargo e de oreo • Cobertura Ganache de chocolate 55% e granulados',
     image: '/images/cakes/BoloOreo.png',
@@ -67,7 +67,7 @@ export const cakes = [
     name: 'Bolo Maracujá',
     category: 'Recheados',
     sizes: [
-      { size: 'Médio (20cm)', price: 190.00 }
+      { size: 'Médio (20cm)', price: 200.00 }
     ],
     shortDescription: '• Massa de chocolate 70% • Recheio de brigadeiro de maracujá e meio amargo • Cobertura ganache de chocolate 55%',
     image: '/images/cakes/BoloMaracuja.png',
@@ -78,9 +78,8 @@ export const cakes = [
     name: 'Bolo Morango',
     category: 'Recheados',
     sizes: [
-      { size: 'Pequeno (15cm)', price: 160.00 },
-      { size: 'Médio (18cm)', price: 190.00 },
-      { size: 'Grande (20cm)', price: 230.00 }
+      { size: 'Pequeno (15cm)', price: 170.00 },
+      { size: 'Grande (20cm)', price: 240.00 }
     ],
     shortDescription: '• Massa de chocolate 70% • Recheio brigadeiro meio amargo e geleia de morango • Ganache de chocolate meio amargo',
     image: '/images/cakes/BoloMorango.png',
@@ -91,8 +90,8 @@ export const cakes = [
     name: 'Bolo Choconinho',
     category: 'Recheados',
     sizes: [
-      { size: 'Pequeno (15cm)', price: 160.00 },
-      { size: 'Médio (20cm)', price: 210.00 }
+      { size: 'Pequeno (15cm)', price: 180.00 },
+      { size: 'Médio (20cm)', price: 240.00 }
     ],
     shortDescription: '• Massa de chocolate 70% • Recheio brigadeiro meio amargo e ninho • Cobertura Ganache de chocolate 54% e brigadeiros',
     image: '/images/cakes/BoloChoconinho.png',
@@ -100,12 +99,11 @@ export const cakes = [
   },
   {
     id: '9',
-    name: 'Bolo Prestígio 2',
+    name: 'Bolo Prestígio',
     category: 'Recheados',
     sizes: [
       { size: 'Pequeno (15cm)', price: 140.00 },
-      { size: 'Médio (20cm)', price: 190.00 },
-      { size: 'Grande (24cm)', price: 230.00 }
+      { size: 'Médio (20cm)', price: 220.00 },
     ],
     shortDescription: '• Massa de chocolate 70% • Recheio brigadeiro de coco cremoso • Cobertura brigadeiro meio amargo e coco ralado seco',
     image: '/images/cakes/BoloPrestigio2.png',
@@ -177,8 +175,8 @@ export const cakes = [
     name: 'Bolo Chocolatudo',
     category: 'Simples',
     sizes: [
-      { size: 'Médio (18cm)', price: 40.00 },
-      { size: 'Grande (22cm)', price: 70.00 }
+      { size: 'Médio (18cm)', price: 50.00 },
+      { size: 'Grande (22cm)', price: 75.00 }
     ],
     shortDescription: '• Massa de chocolate com cobertura de brigadeiro meio amargo e granulados',
     image: '/images/cakes/BoloChocolatudo.png',
@@ -189,8 +187,8 @@ export const cakes = [
     name: 'Bolo de Cenoura com Brigadeiro',
     category: 'Simples',
     sizes: [
-      { size: 'Médio (18cm)', price: 40.00 },
-      { size: 'Grande (22cm)', price: 70.00 }
+      { size: 'Médio (18cm)', price: 50.00 },
+      { size: 'Grande (22cm)', price: 75.00 }
     ],
     shortDescription: '• Massa de cenoura com cobertura de brigadeiro meio amargo',
     image: '/images/cakes/BoloDeCenouraComBrigadeiro.png',
@@ -201,7 +199,6 @@ export const cakes = [
     name: 'Bolo de Baunilha com Ninho',
     category: 'Simples',
     sizes: [
-      { size: 'Médio (18cm)', price: 40.00 },
       { size: 'Grande (22cm)', price: 70.00 }
     ],
     shortDescription: '• Massa de baunilha com cobertura de brigadeiro de ninho',
@@ -371,10 +368,10 @@ export const cakes = [
     name: 'Bolo Vintage',
     category: 'Especiais',
     sizes: [
-      { size: 'Pequeno (15cm)', price: 180.00 },
-      { size: 'Médio (20cm)', price: 240.00 }
+      { size: 'Pequeno (15cm)', price: 200.00 },
+      { size: 'Médio (20cm)', price: 280.00 }
     ],
-    shortDescription: '• Massa branca úmida e fofinha e recheio de ninho e brigadeiro meio amargo c crocante de amendoim e cobertura de ganache',
+    shortDescription: '• Massa branca úmida e deliciosa com recheio de brigadeiro branco e brigadeiro meio amargo com crocante. Cobertura de ganache de brigadeiro branco.',
     image: '/images/cakes/BoloVintage.png',
     isFeatured: false,
   },
@@ -506,6 +503,30 @@ export const cakes = [
     ],
     shortDescription: '• Massa de brownie com chocolate meio amargo e cobertura de brigadeiro meio amargo',
     image: '/images/cakes/Brownie.png',
+    isFeatured: false,
+  },
+  {
+    id: '43',
+    name: 'Bolo rosê',
+    category: 'Especiais',
+    sizes: [
+      { size: 'Pequeno (15cm)', price: 190.00 },
+      { size: 'Médio (20cm)', price: 270.00 }
+    ],
+    shortDescription: '• Massa Red velvet fofinha e recheio brigadeiro de cream cheese saborizado com limão e cobertura de ganache.',
+    image: '/images/cakes/BoloRose.png',
+    isFeatured: false,
+  },
+  {
+    id: '44',
+    name: 'Bolo Vintage 2',
+    category: 'Especiais',
+    sizes: [
+      { size: 'Pequeno (15cm)', price: 180.00 },
+      { size: 'Médio (20cm)', price: 260.00 }
+    ],
+    shortDescription: '• Massa branca fofinha com recheio de ninho e brigadeiro meio amargo e cobertura de ganache de chocolate branco.',
+    image: '/images/cakes/BoloVintage2.png',
     isFeatured: false,
   }
 ];
