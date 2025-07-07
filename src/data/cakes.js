@@ -4,9 +4,9 @@ export const cakes = [
     name: 'Bolo de Chocolate',
     category: 'Recheados',
     sizes: [
-      { size: 'Pequeno (15cm)', price: 160.00 },
-      { size: 'Médio (20cm)', price: 200.00 },
-      { size: 'Grande (24cm)', price: 240.00 }
+      { size: 'Pequeno (15cm)', price: 170.00 },
+      { size: 'Médio (20cm)', price: 220.00 },
+      { size: 'Grande (24cm)', price: 260.00 }
     ],
     shortDescription: '• Massa de chocolate 70% • Recheio brigadeiro meio amargo • Cobertura Ganache chocolate 55% e granulado de cereais',
     image: '/images/cakes/BoloDeChocolate.png',
@@ -31,8 +31,8 @@ export const cakes = [
     name: 'Bolo Dois Amores',
     category: 'Recheados',
     sizes: [
-      { size: 'Pequeno (15cm)', price: 160.00 },
-      { size: 'Médio (20cm)', price: 200.00 }
+      { size: 'Pequeno (15cm)', price: 170.00 },
+      { size: 'Médio (20cm)', price: 220.00 }
     ],
     shortDescription: '• Massa de chocolate 70% • Recheio de brigadeiro branco e meio amargo • Cobertura ganache de chocolate 55%',
     image: '/images/cakes/BoloDoisAmores.png',
@@ -43,8 +43,8 @@ export const cakes = [
     name: 'Bolo Brigadeiro 2',
     category: 'Recheados',
     sizes: [
-      { size: 'Pequeno (15cm)', price: 170.00 },
-      { size: 'Médio (20cm)', price: 230.00 },
+      { size: 'Pequeno (15cm)', price: 180.00 },
+      { size: 'Médio (20cm)', price: 240.00 },
       { size: 'Grande (24cm)', price: 280.00 }
     ],
     shortDescription: '• Massa de chocolate 70% • Recheio brigadeiro meio amargo • Cobertura brigadeiro meio amargo e granulados',
@@ -67,7 +67,7 @@ export const cakes = [
     name: 'Bolo Maracujá',
     category: 'Recheados',
     sizes: [
-      { size: 'Médio (20cm)', price: 200.00 }
+      { size: 'Médio (20cm)', price: 230.00 }
     ],
     shortDescription: '• Massa de chocolate 70% • Recheio de brigadeiro de maracujá e meio amargo • Cobertura ganache de chocolate 55%',
     image: '/images/cakes/BoloMaracuja.png',
