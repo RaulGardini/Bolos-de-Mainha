@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "Bash(node -e \":*)",
+      "Bash(npx vite:*)",
+      "Bash(npm uninstall:*)"
+    ]
+  }
+}
