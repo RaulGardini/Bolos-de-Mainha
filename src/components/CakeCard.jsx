@@ -25,15 +25,17 @@ const CakeCard = ({ cake }) => {
       transition={{ type: "spring", stiffness: 300 }}
     >
       <Card className="card">
-        <CardHeader className="card-header p-0">
-          <div className="cake-image-container">
-            <img 
-              src={cake.image} 
-              alt={cake.name} 
-              className="cake-image"
-            />
-          </div>
-        </CardHeader>
+        {cake.image && (
+          <CardHeader className="card-header p-0">
+            <div className="cake-image-container">
+              <img
+                src={cake.image}
+                alt={cake.name}
+                className="cake-image"
+              />
+            </div>
+          </CardHeader>
+        )}
         <CardContent className="card-content">
           <CardTitle className="card-title">{cake.name}</CardTitle>
           <div className="card-description">
